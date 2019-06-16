@@ -1,3 +1,6 @@
 # Ignore Python Virtual Env and compiled Python
 venv/
 __pycache__/
+
+# Ignore VSCode local settings
+.vscode/
