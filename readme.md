@@ -9,7 +9,7 @@ pip install virtualenv
 ```powershell
 python -m venv ./venv
 ```
-4. Active the virtual env by running the activation script
+4. Activate the virtual env by running the activation script
 ```powershell
 .\venv\scripts\activate
 ```
@@ -17,3 +17,13 @@ python -m venv ./venv
 ```powershell
 pip install -r requirements.txt
 ```
+# Usage
+To use the command line tool, open up a shell/cmd window, and enter the following command
+```powershell
+python scan-site.py <ApiKey> <TargetUrlsFile> <ProxyUrl>
+```
+
+Where:
+* ApiKey is the api key to the OWASP ZAP API.
+* TargetUrlsFile is a file containing a valid URL per line.
+* ProxyUrl is the IP or hostname of the OWASP ZAP proxy (defaults to http://localhost:8080/)
